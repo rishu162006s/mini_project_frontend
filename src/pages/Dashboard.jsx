@@ -3,7 +3,9 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useNavigate } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 
-const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api'
+const API_BASE =
+  import.meta.env.VITE_API_BASE_URL ||
+  'https://mini-project-backend-2-mo2m.onrender.com'
 
 /* ─── Animated Risk Ring ─────────────────────────────────────── */
 function RiskRing({ percentage, level }) {
